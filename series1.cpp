@@ -1,14 +1,17 @@
-//1+2+3+.............+n
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
-    int n, sum = 0;
-    cin >> n;
-
-    for (int i = 1; i <= n; i++)
-        sum += i;
-
-    cout << sum;
-    return 0;
+int main(){
+    int n=10;
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        if(i==n){
+            cout<<i<<"=";
+            sum=sum+i;
+        }
+        else{
+            cout<<i<<"+";
+        }
+}
+cout<<sum;
+return 0;
 }
