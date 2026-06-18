@@ -1,14 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int main() {
-    int a, b;
-    cin >> a >> b;
+    int x = 5, y = 10;
+    swap(&x, &y);
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
 
-    int temp = a;
-    a = b;
-    b = temp;
-
-    cout << a << " " << b;
     return 0;
 }
