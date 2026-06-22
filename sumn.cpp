@@ -2,13 +2,12 @@
 using namespace std;
 
 int main() {
-    int n;
-    long long fact = 1;
+    int n, sum = 0;
     cin >> n;
 
     for(int i = 1; i <= n; i++)
-        fact *= i;
+        sum += i;
 
-    cout << fact;
+    cout << sum;
     return 0;
 }
